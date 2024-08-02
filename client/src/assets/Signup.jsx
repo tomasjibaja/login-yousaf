@@ -75,6 +75,9 @@ function Signup() {
                     Login
                 </Link>
             </div>
+            <Link to="/users" className="btn btn-default border w-70 bg-light rounded-3 text-decoration-none">
+                    Users List
+            </Link>
         </div>
     )
 }

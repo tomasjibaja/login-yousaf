@@ -13,7 +13,12 @@ app.use(cors({
 
 mongoose
     .connect(`mongodb+srv://kintadeaudiovisual:${'ot6T17HI6wg5qMNh'}@clusterkintade.udyiike.mongodb.net/register-yousaf?retryWrites=true&w=majority&appName=ClusterKintade`)
-    .then( () => console.log('Conexión a DB exitosa.') )
+    .then( () => {
+        console.log('Conexión a DB exitosa.');
+        app.use('/', (req, res) => {
+            res.send('Server running succesfully.')
+        })
+     } )
     .catch((err) => console.log(err));
 
 

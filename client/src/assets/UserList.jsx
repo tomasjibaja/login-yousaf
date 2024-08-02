@@ -7,7 +7,7 @@ function UserList() {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        axios.get('http://Localhost:3001/users')
+        axios.get('https://login-yousaf-server.vercel.app/users')
         .then(results => {
             setUsers(results.data)
             setIsLoading(false)

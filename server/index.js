@@ -5,7 +5,11 @@ const UserModel = require('./models/user')
 
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: ["https://login-yousaf-client.vercel.app/"],
+    methods: ["POST", "GET"],
+    credentials: true
+}))
 
 mongoose
     .connect(`mongodb+srv://kintadeaudiovisual:${'ot6T17HI6wg5qMNh'}@clusterkintade.udyiike.mongodb.net/register-yousaf?retryWrites=true&w=majority&appName=ClusterKintade`)

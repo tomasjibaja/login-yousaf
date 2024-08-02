@@ -8,6 +8,9 @@
         { "src": "/login", "dest": "/" },
         { "src": "/home", "dest": "/" },
         { "src": "/users", "dest": "/" },
-        { "src": "/", "dest": "/" }
+        { "src": "/(.*)", "dest": "/" }
+    ],
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/" }
     ]
 }

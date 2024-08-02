@@ -4,10 +4,6 @@
         { "src": "*.js", "use": "@vercel/node"}
     ],
     "routes": [
-        { "src": "/register", "dest": "/" },
-        { "src": "/login", "dest": "/" },
-        { "src": "/home", "dest": "/" },
-        { "src": "/users", "dest": "/" },
         { "src": "/(.*)", "dest": "/" }
     ],
     "rewrites": [
